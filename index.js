@@ -22,7 +22,7 @@ const addPosts = () => {
   posts.forEach(post => {
     const listItem = document.createElement('li')
     unorderedList.append(listItem)
-    listItem.innerHTML = `<a href="posts/${post.slug}">${post.title}</a>`
+    listItem.innerHTML = `<a href="post/${post.slug}">${post.title}</a>`
   })
 
   document.querySelector('#blog').append(unorderedList)

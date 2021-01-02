@@ -1,3 +1,4 @@
+const blogTitle = 'development blog'
 const posts = [
   {
     title: 'AWS Lambda for S3',

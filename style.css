@@ -16,9 +16,13 @@ body {
 }
 
 main {
+  min-width: 400px;
+  max-width: 400px;
+}
+
+.wrap {
   display: flex;
   justify-content: center;
-  padding: 1em;
 }
 
 h1 {
@@ -42,7 +46,7 @@ li > a:hover {
 }
 
 p {
+  max-width: 450px;
   padding-top: 1rem;
-  max-width: 400px;
   font-size: 0.75em;
 }

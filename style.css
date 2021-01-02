@@ -45,7 +45,7 @@ li > a:hover {
   text-decoration: underline;
 }
 
-p {
+.footer {
   max-width: 450px;
   padding-top: 1rem;
   font-size: 0.75em;

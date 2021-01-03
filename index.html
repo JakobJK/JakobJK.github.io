@@ -41,17 +41,16 @@
 
 <script>
   const addPosts = () => {
-  const li = document.createElement('ul')
+    const li = document.createElement('ul')
 
-  posts.forEach(post => {
-    const listItem = document.createElement('li')
-    li.append(listItem)
-    listItem.innerHTML = `<a href="post/${post.slug}">${post.title}</a>`
-  })
+    posts.forEach(({title, slug}) => {
+      const listItem = document.createElement('li')
+      listItem.innerHTML = `<a href="post/${slug}">${title}</a>`
+      li.append(listItem)
+    })
 
-  document.querySelector('#blog').append(li)
-}
+    document.querySelector('#blog').append(li)
+  }
 
-addPosts()
-
+  addPosts()
 </script>

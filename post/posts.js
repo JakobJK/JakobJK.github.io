@@ -1,4 +1,4 @@
-const blogTitle = 'developmenSt blog'
+const blogTitle = 'my dev blog'
 const posts = [
   {
     title: `NODE_ENV !== environment`,

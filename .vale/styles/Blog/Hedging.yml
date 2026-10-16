@@ -1,0 +1,13 @@
+extends: existence
+message: "Don't hedge: '%s'. Say the specific thing."
+level: warning
+ignorecase: true
+tokens:
+  - maybe
+  - perhaps
+  - probably
+  - I think
+  - I guess
+  - sort of
+  - kind of
+  - seems to

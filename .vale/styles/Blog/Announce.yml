@@ -1,0 +1,9 @@
+extends: existence
+message: "Open with the point. Don't announce what the note will cover: '%s'."
+level: suggestion
+ignorecase: true
+tokens:
+  - 'In this (note|post|article)'
+  - 'This (note|post|article) (will|explains|covers|shows|describes)'
+  - 'I will (cover|explain|show|walk)'
+  - 'Here.s a walkthrough'

@@ -1,0 +1,14 @@
+extends: existence
+message: "Cut '%s'. It does no work."
+link: https://github.com/JakobJK/JakobJK.github.io/blob/main/CLAUDE.md
+level: warning
+ignorecase: true
+tokens:
+  - very
+  - really
+  - quite
+  - extremely
+  - actually
+  - basically
+  - definitely
+  - totally

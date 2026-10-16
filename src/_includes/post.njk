@@ -1,0 +1,27 @@
+---
+layout: base.njk
+---
+{% macro metadata(where, page, tags) %}
+<aside class="post-meta" data-placement="{{ where }}" aria-label="About this note">
+  <p class="post-meta-head">// INFO</p>
+  <dl>
+    <div><dt>Date</dt><dd><time datetime="{{ page.date | isoDate }}">{{ page.date | isoDate }}</time></dd></div>
+    {% if tags %}<div><dt>Tags</dt><dd>{{ tags | join(", ") }}</dd></div>{% endif %}
+  </dl>
+</aside>
+{% endmacro %}
+<article class="post">
+  <header class="post-head">
+    <h1>{{ title }}</h1>
+    <p class="lede"><strong>tl;dr:</strong> {{ excerpt }}</p>
+    {{ metadata("head", page, tags) }}
+  </header>
+  <div class="prose">{{ content | safe }}</div>
+  <p class="back"><a href="/">&larr; <span>All notes</span></a></p>
+  <div class="rail">
+    <div class="rail-sticky">
+      {{ metadata("rail", page, tags) }}
+      <nav class="rail-nav" aria-label="Index" hidden></nav>
+    </div>
+  </div>
+</article>

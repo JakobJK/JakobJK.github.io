@@ -1,0 +1,8 @@
+_site/
+node_modules/
+.11ty-vite/
+
+# Vale: keep the config, custom style and vocabulary; packages come from `vale sync`
+.vale/styles/*
+!.vale/styles/Blog/
+!.vale/styles/config/
